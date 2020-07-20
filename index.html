@@ -2,218 +2,87 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="index.css">
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@800&display=swap" rel="stylesheet">
 	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="global.css">
 </head>
-<body onscroll="scrollHeader()">
-	<header id='header'>
-		<div class="logo-image-container">
-			<img id="logo-image" src="https://img.icons8.com/office/80/000000/coronavirus.png"/>  
+<body>
+
+	 <!-- Navigation bar -->
+	<div class= 'navbar'>
+		<div class="navbar-text-options text" id= logo>
+			<div class="heading-semibold-15vw-SquadaOne grey font">Covid19</div>
+			<div class="heading-semibold-15vw-SquadaOne blue font">India</div>
 		</div>
-		<div class="header-items" id="header-heading">Covid-19 tracker</div>
-		<div class="header-items"id="spacing"></div>
-		<a class="header-items" href="#" id='help'><img id="helpimage" src="https://img.icons8.com/plasticine/100/000000/about.png"/>help
-		</a>
-	</header>
+		<div class= 'navbar-options' id='navbar-icons-container'>
+			<div class= 'navbar-options' id='Home'>
+				<img src="./Images/svg/home-solid.svg" >
+			</div>
+			<div class= 'navbar-options' id='About'>
+				<img src="./Images/svg/question-circle-solid.svg">
+			</div>
+			<div class= 'navbar-options' id='mode'>
+				<img src="./Images/svg/moon-solid.svg" >
+			</div>
+		</div>
+		<div class="navbar-text-options text heading-semibold-15vw-SquadaOne blue" id= "language">
+			<div class="font">English</div>
+		</div>
+	</div>
+
+
+	<div class="search-bar">
+		<div>
+			<span class="heading-semibold-15vw-SquadaOne grey">Search your district or state</span>
+		</div>
+		<div class="hanger">
+			<span>|</span>
+		</div>
+		<div id= "bar" class="grey">
+			<input type="text"  class="paragraph-regular-1vw-OpenSans" placeholder="Search">
+		</div>
+	</div>
+
+	<div class= "date-time">
+		<div  class="date-time-content  heading-semibold-1vw-SquadaOne " >
+			<span class="grey">20 Jul,  00:00 IST</span>
+			<img src="./Images/svg/bell-regular.svg">
+			<img src="./Images/svg/redo-solid.svg">
+		</div>
+	</div>
+
+	<div class="cards-section">
+		<div class= "card-plate">
+			<div class="card">
+				<div class="card-heading heading-semibold-1vw-RedRoseBold darkred">
+					Confirmed 
+				</div>
+				<div class="card-count heading-semibold-25vw-RedRoseBold darkred">1054168</div>
+			</div>
+			<div class="card">
+				<div class="card-heading heading-semibold-1vw-RedRoseBold blue">
+					 Active 
+				</div>
+				<div class="card-count heading-semibold-25vw-RedRoseBold blue">608945</div>
+			</div>
+			<div class="card">
+				<div class="card-heading heading-semibold-1vw-RedRoseBold darkgreen">
+					Recovered 
+				</div>
+				<div class="card-count heading-semibold-25vw-RedRoseBold darkgreen">402157</div>
+			</div>
+			<div class="card">
+				<div class="card-heading heading-semibold-1vw-RedRoseBold darkgrey">
+					Deceased 
+				</div>
+				<div class="card-count heading-semibold-25vw-RedRoseBold darkgrey">3008</div>
+				
+			</div>
+		
+		</div>
+
+
+	</div>
 	
-	<div id= "landing">
-		<div id="landing-first-section">
-			<div id="graph-india">
-				
-			</div>
-			<div id="graph-world">
-
-			</div>
-		</div>
-		<div id="landing-second-section">
-			<div id="india-stats">
-
-			</div>
-			<div id="world-stats">
-
-			</div>
-		</div>
-	</div>
-
-	<div id="indian-states-stats">
-		<div id="indian-states">	
-
-			<div  class="statesection-line" id="first-line">
-				<div class="statesection-grid" id="mh">
-					Maharashtra
-				</div>
-				<div class="statesection-grid" id="tn">
-					Tamil Nadu
-				</div>
-				<div class="statesection-grid" id="dl">
-					Delhi
-				</div>
-				<div class="statesection-grid" id="ka">
-					Karnataka
-				</div>
-				<div class="statesection-grid" id="gj">
-					Gujarat
-				</div>
-				<div class="statesection-grid" id= up>
-					Uttar Pradesh
-				</div>
-				<div class="statesection-grid" id="ts">
-					<span>Telangana</span>
-				</div>
-				<div class="data-section">
-					<div id="state-info">
-						<div class="state-info-row">
-							<div class="stat-cards">
-								<div class="stat-cards-info">
-									Confirmed
-								</div>
-								<div class="stat-cards-info">
-									19,924
-								</div>
-							</div>
-							<div class="stat-cards">
-								<div class="stat-cards-info">
-									Active
-								</div>
-								<div class="stat-cards-info">
-									19,924
-								</div>
-							</div>
-						</div>
-						<div class="state-info-row">
-							<div class="stat-cards">
-								<div class="stat-cards-info">
-									Recovered
-								</div>
-								<div class="stat-cards-info">
-									19,924
-								</div>
-							</div>
-							<div class="stat-cards">
-								<div class="stat-cards-info">
-									Deceased
-								</div>
-								<div class="stat-cards-info">
-									19,924
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div id="state-graph">
-						Graph <br> Single graph with 4 lines
-					</div>
-				</div>
-			</div>
-
-			<div  class="statesection-line" id="second-line">
-				<div class="statesection-grid" id="mh">
-					Andhra Pradesh
-				</div>
-				
-				<div class="statesection-grid" id="tn">
-					West Bengal
-				</div>
-				<div class="statesection-grid" id="dl">
-					Rajasthan
-				</div>
-				<div class="statesection-grid" id="ka">
-					Haryana
-				</div>
-				<div class="statesection-grid" id="gj">
-					Bihar 
-				</div>
-				<div class="statesection-grid" id= up>
-					Madhya Pradesh
-				</div>
-				<div class="statesection-grid" id="ts">
-					Haryana
-				</div>
-			</div>
-
-			<div  class="statesection-line" id="first-line">
-				<div class="statesection-grid" id="mh">
-					Maharashtra
-				</div>
-				<div class="statesection-grid" id="tn">
-					Tamil Nadu
-				</div>
-				<div class="statesection-grid" id="dl">
-					Delhi
-				</div>
-				<div class="statesection-grid" id="ka">
-					Karnataka
-				</div>
-				<div class="statesection-grid" id="gj">
-					Gujarat
-				</div>
-				<div class="statesection-grid" id= up>
-					Uttar Pradesh
-				</div>
-				<div class="statesection-grid" id="ts">
-					Telangana
-				</div>
-			</div>
-
-			<div  class="statesection-line" id="first-line">
-				<div class="statesection-grid" id="mh">
-					Maharashtra
-				</div>
-				<div class="statesection-grid" id="tn">
-					Tamil Nadu
-				</div>
-				<div class="statesection-grid" id="dl">
-					Delhi
-				</div>
-				<div class="statesection-grid" id="ka">
-					Karnataka
-				</div>
-				<div class="statesection-grid" id="gj">
-					Gujarat
-				</div>
-				<div class="statesection-grid" id= up>
-					Uttar Pradesh
-				</div>
-				<div class="statesection-grid" id="ts">
-					Telangana
-				</div>
-			</div>
-			
-		</div>
-
-		<div id="india-uts">
-			<div id="india-uts-list">
-				<div class="ut-grid">
-					Delhi
-				</div>
-				<div class="ut-grid">
-					Jammu & Kashmir
-				</div>
-				<div class="ut-grid">
-					Pudducherry
-				</div>
-				<div class="ut-grid">
-					Daman & Diu
-				</div>
-				<div class="ut-grid">
-					Dadra & Nagar Haveli
-				</div>
-				<div class="ut-grid">
-					Lakshdweep
-				</div>
-				<div class="ut-grid">
-					Andaman and Nicobar Island
-				</div>
-				<div class="ut-grid">
-					Chandigarh
-				</div>
-				<div class="ut-grid">
-					Ladakh
-				</div>
-			</div>
-		</div>
-	</div>
-		<script src="index.js"></script>
-
 </body>
 </html>

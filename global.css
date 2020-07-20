@@ -1,0 +1,82 @@
+*{
+	margin:0;
+	padding:0;
+	color:rgb(80, 75, 75);
+}
+
+body{
+	height:150vw;
+}
+
+/* Fonts Size and Family*/
+@font-face
+{
+	font-family: "SquadaOne";
+	src: url("./fonts/SquadaOne-Regular.ttf");
+}
+
+@font-face
+{
+	font-family: "RedRose";
+	src: url("./fonts/RedRose-Regular.ttf");
+}
+
+@font-face
+{
+	font-family: "RedRoseBold";
+	src: url("./fonts/RedRose-Bold.ttf");
+}
+
+@font-face
+{
+	font-family: "OpenSans";
+	src: url("./fonts/OpenSans-Regular.ttf");
+}
+
+.heading-semibold-1vw-RedRoseBold {
+	font-family: "RedRoseBold";
+	font-size: 1vw;
+}
+
+.heading-semibold-25vw-RedRoseBold {
+	font-family: "RedRoseBold";
+	font-size: 2.5vw;
+}
+
+.paragraph-1vw-RedRose{
+	font-family: "RedRose";
+	font-size: 1vw;
+}
+
+.heading-semibold-2vw-SquadaOne{
+	font-family: "SquadaOne";
+	font-size: 2vw;
+	font-weight: 400;
+}
+
+.heading-semibold-15vw-SquadaOne{
+	font-family: "SquadaOne";
+	font-size: 1.5vw;
+	font-weight: 400;
+}
+
+.heading-semibold-1vw-SquadaOne{
+	font-family: "SquadaOne";
+	font-size: 1vw;
+	font-weight: 400;
+}
+
+.paragraph-regular-1vw-OpenSans {
+	font-family: "OpenSans";
+	font-size: 1vw;
+	font-weight: 500;
+}
+
+/* Font Color */
+.whitesmoke {color:rgb(214, 210, 210);}
+.grey {color:rgb(110, 110, 110);}
+.darkred{color:rgb(78, 4, 4);}
+.darkgreen {color:rgb(5, 78, 5);}
+.darkyellow{color: rgb(126, 91, 5);}
+.blue{color:rgb(12, 12, 92);}
+.darkgrey{color:rgb(85, 83, 83)}

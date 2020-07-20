@@ -1,241 +1,168 @@
 *{
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
-body{
-	height:150vw;
-	background-color: #161625 ;
-}
+
 @media (min-aspect-ratio:1/1) {
-	#header{
-		position: fixed;
+
+
+	/* Navigation bar */
+	.navbar {
+		height:100%;
+		width:7vw;
 		top:0;
-		height: 7vw;
-		box-sizing: border-box;
-		z-index: 10;
-		padding: 0 5vw 0 5vw;
-		width:100vw;
+		left:0;
+		position:fixed;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		background-color: rgb(248, 243, 238);
-		transition-duration: 0.5s;
+		font-size: 1vw;
+		background-color: rgb(241, 241, 241);
+		opacity:0.7;
 	}
 
-	
-		header .header-items {
+		.navbar .navbar-text-options {
+			margin: 1px;
+			height: 7vw;
+			width:100%;
 			display: flex;
-			width:6vw;
-			font-size: x-large;
+			justify-content: flex-start;
 			align-items: center;
-			color: rgb(200, 233, 124);
-			line-height: 2vw;
-			font-family: 'Baloo Da 2', cursive;
-		}
-		
-		header .header-items-scrolled {
-			width:20vw;
-			line-height: 1.5vw;
-			font-size: medium;
-			transition-duration: 0.5s;
+			padding: 0 0 0 2.5vw;
 		}
 
-		#header-heading {
-			transition-duration: 0.5s;
+		.navbar .text {
+			height:3vw;
+			width: 7vw;
+			margin:3vw 3.5vw 2vw 0;
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
 		}
 
-			header #logo-image {
-				transition-duration:0.5s;
-			}
-
-
-			.header-items #helpimage {
-				height: 2vw;
-				width: 2vw;
-			}
-
-			header #spacing {
-				flex-grow: 1;
-			}	
-
-			header #help {
-				width: 5vw;
-				font-family: 'Baloo Da 2', cursive;
-				color: rgb(97, 82, 82);
-				font-weight: 100;
-				font-size: medium;
-				text-decoration: none;
-				animation: none;
-			}
-
-	#landing{
-		box-sizing: border-box;
-		margin:8vw 5vw 5vw 5vw;
-		height:40vw;
-		width:90vw;
-		border-radius: 0.5vw;
-
-	}
-
-		#landing #landing-first-section{
-			height:30vw;
-			width:90vw;
-			display:flex;
-			justify-content: space-evenly;
-		}
-
-			#landing-first-section #graph-india {
-				height:28vw;
-				width: 58%;
-				border-radius: 0.5vw;
-				box-shadow: 0vw 0vw 0.5vw 0vw rgba(250, 248, 248, 0.133);
+			.text .font{
+				font-size: 1.2vw;
 
 			}
 
-			#landing-first-section #graph-world {
-				height:28vw;
-				width:38%;
-				border: 1px solid black;
-				border-radius: 0.5vw;
-				box-shadow: 0vw 0vw 0.5vw 0vw rgba(250, 248, 248, 0.133);
 
-			}
-		
-		#landing #landing-second-section {
-			height:10vw;
-			width:90vw;
-			display:flex;
-			justify-content: space-evenly;			
-		}
-
-			#landing-second-section #india-stats {
-				box-shadow: 0vw 0vw 0.5vw 0vw rgba(250, 248, 248, 0.133);
-				border-radius: 0.5vw;
-				width: 58%;
-				height:10vw;
-			}
-
-			#landing-second-section #world-stats {
-				box-shadow: 0vw 0vw 0.5vw 0vw rgba(250, 248, 248, 0.133);
-				border-radius: 0.5vw;
-				width: 38%;
-				height: 10vw;
-			}
-
-	#indian-states-stats{
-		color:white;
-		border-radius: 0.5vw;
-		box-sizing: border-box;
-		margin: 5vw 5vw 5vw 5vw;
-		display:flex;
-		height:100vw;
-	}
-
-		#indian-states-stats #indian-states{
-			height: 80vw;
-			width:80%;
-		}
-
-		#indian-states .statesection-line{
-			height:auto;
-			display:flex;
-			flex-flow: row wrap;
-			margin: 5vw 2vw 0 2vw;
-			justify-content: space-between;
-
-		}
-
-			.statesection-line .statesection-grid {
-				display:flex;
-				align-items: center;
-				justify-content: center;
-				height:10vw;
-				width: 7vw;
-				border-radius: 0.5vw;
-				box-shadow: 0vw 0vw 0.5vw 0vw rgba(250, 248, 248, 0.133);
-
-			}
-
-				.statesection-grid:hover{
-					background-color: #2d2d38;
-					transition-duration: 0.2s;
-					opacity: 0.3;
-					transform: scale(1.05);
-				}
-		#indian-states-stats #india-uts{
-			height: 80vw;
-			width: 20%;
-
-		}	
-
-			#india-uts #india-uts-list{
-				margin: 5vw 0 5vw 0;
-				display:flex;
-				height: 70vw;
-				width: 100%;
-				flex-direction: column;				
-				align-items: center;
-				justify-content: space-between;
-			}			
-				#india-uts-list .ut-grid{
-					text-align: center;
-					border-radius: 0.5vw;
-					height: 5vw;
-					width: 7vw;
-					box-shadow: 0vw 0vw 0.5vw 0vw rgba(250, 248, 248, 0.133);
-					
-				}
-
-		.data-section{
-			/* display: none; */
-			height: 30vw;
+		.navbar #navbar-icons-container {
+			height: 45%;
 			width: 100%;
-			color: white;
-			margin: 2vw 0 2vw 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items:center;
+		}
+
+			.navbar .navbar-options {
+				height:3vw;
+				width: 3vw;
+			}
+
+				.navbar-options img{
+					height:1.9vw;
+					width:1.9vw;
+				}
+
+
+
+/* Search bar */
+	.search-bar {
+		margin: 5vw 0 0 7vw;
+		height: 10vw;
+		width: 93vw;
+		display:flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+		.search-bar #bar {
+			height:6vw;
+			width: 53vw;
+		}
+			
+		.search-bar .hanger span{
+			font-weight: 900;
+			opacity: 0.25;
+		}
+
+		.search-bar input{
+			outline: none;
+			text-decoration: none;
+			margin:0;
+			padding	:2vw 2vw 2vw 3vw;
+			height:6vw;
+			width: 53vw;
+			border-radius: 0.6vw;
+			border:none;
+			box-shadow: 0 0 1vw rgb(145, 141, 141, 0.25);
+			text-align: start;
+			opacity:0.6;
+			text-shadow: none;
+		}
+
+			.search-bar input[placeholder] {
+				font-size: medium;
+			}
+		
+	/* Date -Time -Icons*/
+	.date-time {
+		margin: 0 0 5vw 7vw;
+		height:1vw;
+		width:93vw;
+		display: flex;
+		justify-content: center;
+	}
+
+		.date-time .date-time-content {
+		height:3vw;
+		width: 17vw;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		font-size: 1.25vw;
+		}
+
+		.date-time-content img {
+			height: 1.5vw;
+			width: 1.5vw;
+			opacity: 0.3;
+		}
+
+
+/* Card section */
+	.cards-section {
+		height: 17vw;
+		width:93vw;
+		margin: 2vw 0 1vw 7vw;
+		display: flex;
+		justify-content: center;
+		align-self: center;	
+	}
+
+		.cards-section .card-plate {
+			height: 17vw;
+			width: 53vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.card-plate .card{
+			height:15vw;
+			width: 13.25vw;
 			border-radius: 0.5vw;
 			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			box-shadow: 0 0 1vw rgb(145, 141, 141, 0.25);
+
 		}
-
-			.data-section #state-info{
-				border-radius: 0.5vw;
-				height: 100%;
-				width: 60%;
-				display: flex;
-				flex-flow: column;
-				justify-content: space-evenly;
-			}
-
-				#state-info .state-info-row {
-					height:12vw;
-					width: 100%;
-					display: flex;
-					justify-content: space-evenly;
-				}
-
-					.state-info-row .stat-cards{
-						box-shadow: 0vw 0vw 0.5vw 0vw rgba(250, 248, 248, 0.133);
-						border-radius: 0.5vw;
-						height: 12vw;
-						width: 15vw;
-						display:flex;
-						flex-flow: column;
-						justify-content: space-evenly;
-						align-items: center;
-						
-					}
-						
-					.stat-cards .stat-cards-info {
-
-					}
-
-			.data-section #state-graph {
-				height:100%;
-				width:40%;
-				border-radius: 0.5vw;
-				box-shadow: 0vw 0vw 0.5vw 0vw rgba(250, 248, 248, 0.133);
-
-			}
-
-
 
 }
