@@ -5,7 +5,7 @@
 }
 
 body{
-	height:150vw;
+	height:auto;
 }
 
 /* Fonts Size and Family*/
@@ -33,6 +33,21 @@ body{
 	src: url("./fonts/OpenSans-Regular.ttf");
 }
 
+@font-face
+{
+	font-family: "OpenSansSemiBold";
+	src: url("./fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face
+{
+	font-family: "OpenSansBold";
+	src: url("./fonts/OpenSans-Bold.ttf");
+}
+
+
+
+/* Font classes */
 .heading-semibold-1vw-RedRoseBold {
 	font-family: "RedRoseBold";
 	font-size: 1vw;
@@ -43,6 +58,16 @@ body{
 	font-size: 2.5vw;
 }
 
+.heading-semibold-2vw-RedRoseBold {
+	font-family: "RedRoseBold";
+	font-size: 2vw;
+}
+
+.heading-semibold-15vw-RedRoseBold {
+	font-family: "RedRoseBold";
+	font-size: 1.5vw;
+}
+
 .paragraph-1vw-RedRose{
 	font-family: "RedRose";
 	font-size: 1vw;
@@ -50,8 +75,8 @@ body{
 
 .heading-semibold-2vw-SquadaOne{
 	font-family: "SquadaOne";
-	font-size: 2vw;
-	font-weight: 400;
+	font-size:2vw;
+	font-weight:400;
 }
 
 .heading-semibold-15vw-SquadaOne{
@@ -72,11 +97,29 @@ body{
 	font-weight: 500;
 }
 
+.paragraph-semibold-1vw-OpenSans {
+	font-family: "OpenSansSemiBold";
+	font-size: 1vw;
+	font-weight: 500;
+}
+
+.paragraph-semibold-1vw-OpenSans {
+	font-family: "OpenSansSemiBold";
+	font-size: 1vw;
+	font-weight: 700;
+}
+
+.paragraph-bold-1vw-OpenSans {
+	font-family: "OpenSansBold";
+	font-size: 1vw;
+	font-weight: 900;
+}
+
 /* Font Color */
 .whitesmoke {color:rgb(214, 210, 210);}
 .grey {color:rgb(110, 110, 110);}
 .darkred{color:rgb(78, 4, 4);}
 .darkgreen {color:rgb(5, 78, 5);}
 .darkyellow{color: rgb(126, 91, 5);}
-.blue{color:rgb(12, 12, 92);}
+.blue{color:rgb(31, 31, 88);}
 .darkgrey{color:rgb(85, 83, 83)}
