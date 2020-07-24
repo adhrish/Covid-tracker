@@ -151,17 +151,19 @@
 			width: 53vw;
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: space-evenly;
 		}
 
 		#card-plate .card{
 			height:15vw;
-			width: 13.25vw;
+			width: 12vw;
 			border-radius: 0.5vw;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: center;
+			box-shadow: 0 0 1vw rgb(145, 141, 141, 0.25);
+			
 		}
 
 
@@ -272,12 +274,6 @@
 					align-items: flex-start;
 				}
 
-					
-
-
-
-
-
 
 					
 /* -------------------------Table-------------------------------------- */
@@ -327,13 +323,14 @@
 					box-shadow: 0 0 1vw rgba(170, 166, 166, 0.25);
 					background-color: rgb(240, 234, 234);
 					margin-top:0.5vw;
-					/* height: auto; */
+					height: 5vw;	
 					width: 10vw;
 					padding: 1vw;
 					border-radius:0.2vw;
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					flex-shrink:0;
 				}
 
 /* -----------------------bottom section ----------------- */
