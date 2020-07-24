@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="global.css">
 </head>
-<body>
+<body onload="call()">
 
 	 <!-- Navigation bar -->
 	<div class= 'navbar'>
@@ -52,31 +52,8 @@
 	</div>
 
 	<div class="cards-section">
-		<div class= "card-plate">
-			<div class="card">
-				<div class="card-heading heading-semibold-1vw-RedRoseBold darkred">
-					Confirmed 
-				</div>
-				<div class="card-count heading-semibold-25vw-RedRoseBold darkred">1054168</div>
-			</div>
-			<div class="card">
-				<div class="card-heading heading-semibold-1vw-RedRoseBold blue">
-					 Active 
-				</div>
-				<div class="card-count heading-semibold-25vw-RedRoseBold blue">608945</div>
-			</div>
-			<div class="card">
-				<div class="card-heading heading-semibold-1vw-RedRoseBold darkgreen">
-					Recovered 
-				</div>
-				<div class="card-count heading-semibold-25vw-RedRoseBold darkgreen">402157</div>
-			</div>
-			<div class="card">
-				<div class="card-heading heading-semibold-1vw-RedRoseBold darkgrey">
-					Deceased 
-				</div>
-				<div class="card-count heading-semibold-25vw-RedRoseBold darkgrey">3008</div>				
-			</div>		
+		<div id="card-plate">
+			
 		</div>
 	</div>
 
@@ -134,29 +111,20 @@
 
 	
 	<div class="table">
-		<div class= "table-plate">
+		<div id= "table-plate" >
 			<div class="heading-row ">
 				<div class="table-heading paragraph-bold-1vw-OpenSans">State/UT</div>
 				<div class="table-heading paragraph-bold-1vw-OpenSans">C</div>
 				<div class="table-heading paragraph-bold-1vw-OpenSans">A</div>
 				<div class="table-heading paragraph-bold-1vw-OpenSans">R</div>
 				<div class="table-heading paragraph-bold-1vw-OpenSans">D</div>
-				<div class="table-heading paragraph-bold-1vw-OpenSans">T</div>
-
 			</div>
-			<div class="data-row">
-				<div class="data paragraph-bold-1vw-OpenSans">Karnataka</div>
-				<div class="data paragraph-bold-1vw-OpenSans">201456</div>
-				<div class="data paragraph-bold-1vw-OpenSans">21456</div>
-				<div class="data paragraph-bold-1vw-OpenSans">514740</div>
-				<div class="data paragraph-bold-1vw-OpenSans">1254</div>
-				<div class="data paragraph-bold-1vw-OpenSans">738906</div>
-			</div>
+		
 			
 		</div>			
 	</div>
 
-
+2
 	<div class="bottom-section">
 		<div class="bottom-section-plate">
 			<div class="text heading-semibold-2vw-RedRoseBold blue">
@@ -167,6 +135,7 @@
 			</div>
 		</div>
 	</div>
-	
+
+	<script src="test.js"></script>
 </body>
 </html>
