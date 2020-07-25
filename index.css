@@ -1,8 +1,12 @@
-  *{
+body::-webkit-scrollbar {
+	display:none;
+}
+*{
 	margin: 0;
 	box-sizing: border-box;
 	padding: 0;
 }
+
 
 @media (min-aspect-ratio:1/1) {
 
@@ -45,7 +49,6 @@
 
 			.text .font{
 				font-size: 1.2vw;
-
 			}
 
 
@@ -194,6 +197,7 @@
 			}
 
 				.boxes-plate .boxes {
+					cursor:pointer;
 					box-sizing: border-box;
 					height:3vw;
 					width: 3vw;
@@ -235,24 +239,30 @@
 					}
 
 
-
-	.legend {
-		height:10vw;
+	#legend {
+		height:auto;
 		width:93vw;
-		margin: 0 0 0 7vw;
+		margin: 1vw 0 0 7vw;
 		display:flex;
 		justify-content: center;
 		align-items: center;
 	}
 
-		.legend .legend-plate {
-			height: 9vw;
+		#legend .legend-plate {
+			height: 10vw;
 			width: 53vw;
+			opacity: 0.7;
 			border-radius: 0.4vw;
 			display: flex;
 			justify-content: space-between;
+			transition: opacity 0.3s linear, height 0.5s linear;
 			box-shadow: 0 0 1vw rgb(145, 141, 141, 0.25);
+		}
 
+		#legend .disabled {
+			opacity: 0;
+			height: 0;
+			transition: opacity 0.3s linear, height 0.5s linear;
 		}
 
 			.legend-plate .columns {
@@ -274,17 +284,18 @@
 					align-items: flex-start;
 				}
 
-
-					
 /* -------------------------Table-------------------------------------- */
+
 	.table {
 		box-sizing: border-box;
 		height: auto;
+		position: relative;
 		width: 93vw;
-		margin: 0 0 5vw 7vw;
+		margin: 2vw 0 5vw 7vw;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transition: all 1s linear;
 	}
 
 		.table #table-plate {
@@ -293,7 +304,7 @@
 		}
 		
 			#table-plate .heading-row {
-				height: auto;
+				height: 3vw;
 				width: 53vw;
 				display: flex;
 				justify-content: space-evenly;
@@ -302,8 +313,8 @@
 			
 				.heading-row .table-heading{
 					box-shadow: 0 0 1vw rgba(170, 166, 166, 0.25);
-					background-color: rgb(229, 226, 226);
-					height: auto;
+					background-color: rgb(235, 229, 229);
+					height: 3vw;
 					width: 10vw;
 					border-radius:0.2vw;
 					display: flex;                             
@@ -320,17 +331,23 @@
 			}
 			
 				#data-row .data{
-					box-shadow: 0 0 1vw rgba(170, 166, 166, 0.25);
-					background-color: rgb(240, 234, 234);
+					box-shadow: 0 0 1vw rgba(189, 185, 185, 0.25);
+					/* background-color: rgb(240, 234, 234); */
 					margin-top:0.5vw;
-					height: 5vw;	
+					height: auto;	
 					width: 10vw;
-					padding: 1vw;
+					padding:1vw;
 					border-radius:0.2vw;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					flex-shrink:0;
+				}
+
+
+
+				#data-row .cell{
+					height: inherit;
 				}
 
 /* -----------------------bottom section ----------------- */
@@ -358,7 +375,5 @@
 				color: rgb(63, 187, 236);
 				margin-bottom: 5vw;
 			}
-
-
 
 }

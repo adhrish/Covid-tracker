@@ -15,11 +15,11 @@ function call() {
 				console.log(response);
 				for(let i=1; i<response.statewise.length;i++) {
 					const row = 	`<div id="data-row" >
-										<div class="data paragraph-bold-1vw-OpenSans">${response.statewise[i].state}</div>
-										<div class="data paragraph-bold-1vw-OpenSans">${response.statewise[i].confirmed}</div>
-										<div class="data paragraph-bold-1vw-OpenSans">${response.statewise[i].active}</div>
-										<div class="data paragraph-bold-1vw-OpenSans">${response.statewise[i].recovered}</div>
-										<div class="data paragraph-bold-1vw-OpenSans">${response.statewise[i].deaths}</div>
+										<div class="data paragraph-bold-1vw-OpenSans state-cell">${response.statewise[i].state}</div>
+										<div class="data cell paragraph-bold-1vw-OpenSans">${response.statewise[i].confirmed}</div>
+										<div class="data cell paragraph-bold-1vw-OpenSans">${response.statewise[i].active}</div>
+										<div class="data cell paragraph-bold-1vw-OpenSans">${response.statewise[i].recovered}</div>
+										<div class="data cell paragraph-bold-1vw-OpenSans">${response.statewise[i].deaths}</div>
 									</div>`
 
 					x.innerHTML+= row;
@@ -49,7 +49,6 @@ function call() {
 											</div>
 											<div class="card-count heading-semibold-25vw-RedRoseBold darkgrey">${response.statewise[0].deaths}</div>				
 										</div>		`
-					console.log(y);
 					cardsData.innerHTML=y;
 			}
 		)
@@ -58,5 +57,10 @@ function call() {
 				console.log(error);
 			}
 		)
+}
+
+function legend() {
+	let bro = document.getElementById("legend");
+	bro.children[0].classList.toggle('disabled');
 }
 
