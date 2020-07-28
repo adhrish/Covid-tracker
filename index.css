@@ -72,7 +72,6 @@ body::-webkit-scrollbar {
 				}
 
 
-
 /* Search bar */
 	.search-bar {
 		margin: 5vw 0 0 7vw;
@@ -111,7 +110,7 @@ body::-webkit-scrollbar {
 		}
 
 			.search-bar input[placeholder] {
-				font-size: medium;
+				font-size: x-large;
 			}
 		
 	/* Date -Time -Icons*/
@@ -137,6 +136,72 @@ body::-webkit-scrollbar {
 			width: 1.5vw;
 			opacity: 0.3;
 		}
+
+
+
+/* search result */
+	#search-result {
+		height: 0;
+		opacity: 0;
+		width: 93vw;
+		margin: 0 0 5vw 7vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition-duration: 0.5s;
+	}
+
+	.enabled-search {
+		height: 37vw;
+		opacity: 1;
+		transition: opacity 0.3s linear, height 0.5s linear;
+	}
+
+		#search-result .search-result-plate {
+			padding: 1vw;
+			height: 100%;
+			width: 53vw;
+			border-radius: 0.5vw;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			justify-content: space-evenly;
+		}	
+
+			#search-result .search-result-plate #state-name {
+				height: 10%;
+				width: auto;
+			}
+
+			#search-result .search-result-plate .row {
+				height: 45%;
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+
+				#search-result .search-result-plate .row .search-cards {
+					height: 12vw;
+					width:12vw;
+					border-radius: 0.3vw;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					align-items: center;
+					box-shadow: 0 0 1vw rgb(145, 141, 141, 0.25);			
+				}
+				
+
+
+				#search-result .search-result-plate .row #graph {
+					height: 100%;
+					width: 45vw;
+					background-color: cadetblue;
+				}
+
+
+
 
 
 /* Card section */
@@ -165,8 +230,7 @@ body::-webkit-scrollbar {
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: center;
-			box-shadow: 0 0 1vw rgb(145, 141, 141, 0.25);
-			
+			box-shadow: 0 0 1vw rgb(145, 141, 141, 0.25);			
 		}
 
 
@@ -249,9 +313,9 @@ body::-webkit-scrollbar {
 	}
 
 		#legend .legend-plate {
-			height: 10vw;
+			height: 0;
 			width: 53vw;
-			opacity: 0.7;
+			opacity: 0;
 			border-radius: 0.4vw;
 			display: flex;
 			justify-content: space-between;
@@ -259,9 +323,9 @@ body::-webkit-scrollbar {
 			box-shadow: 0 0 1vw rgb(145, 141, 141, 0.25);
 		}
 
-		#legend .disabled {
-			opacity: 0;
-			height: 0;
+		#legend .enabled {
+			opacity: 0.7;
+			height: 10vw;
 			transition: opacity 0.3s linear, height 0.5s linear;
 		}
 

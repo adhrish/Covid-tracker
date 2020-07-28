@@ -64,3 +64,37 @@ function legend() {
 	bro.children[0].classList.toggle('disabled');
 }
 
+function search(input) {
+	fetch('https://api.covid19india.org/data.json').then(
+		response => response.json()
+	).then(
+		response => { 
+			console.log(input.target.value);
+
+			for(let i = 0 ; i<response.statewise.length; i++){
+				if(input.target.value === response.statewise[i].state) {
+					console.log("success");
+				}
+			}
+		}
+	).catch(
+		response => console.log("error")
+	)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
